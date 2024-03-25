@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aos Animation</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../CSS/Aos-Animation.css">
+
+
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+.container div{
+    background-color: #fff;
+    box-shadow: 0px 5px 15px black;
+    width: 300px;
+    height: 250px;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Card1" 
+        data-aos="fade-right" data-aos="fade-left" data-aos-offset="500" data-aos-delay="500"  data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true"></div>
+        <div class="Card2" data-aos="fade-left" data-aos-offset="500" data-aos-delay="500"  data-aos-duration="1000"></div>
+        <div class="Card3" data-aos="fade-right" data-aos-offset="500"></div>
+        <div class="Card4" data-aos="fade-left" data-aos-offset="500"></div>
+        <div class="Card5" data-aos="fade-right" data-aos-offset="500"></div>
+        <div class="Card6" data-aos="fade-left" data-aos-offset="200"></div>
+    </div>
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+  
+</html>
